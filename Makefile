@@ -4,7 +4,7 @@ ARCHS = arm64
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = SimpleInsta
+TWEAK_NAME = NoReelInsta
 
 # Fichiers source
 $(TWEAK_NAME)_FILES = Tweak.x Utils.m

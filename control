@@ -1,5 +1,5 @@
-Package: com.yourname.simpleinsta
-Name: SimpleInsta
+Package: com.yourname.noreelinsta
+Name: NoReelInsta
 Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Version minimaliste de SCInsta pour supprimer uniquement l'onglet Reels et le défilement automatique.

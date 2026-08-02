@@ -2,7 +2,7 @@
 
 set -e
 
-# SimpleInsta - Script de build simplifie
+# NoReelInsta - Script de build simplifie
 # Utilisation: ./build.sh sideload
 
 if [ ! -d "$THEOS" ]; then
@@ -13,7 +13,7 @@ if [ ! -d "$THEOS" ]; then
 fi
 
 if [ "$1" == "sideload" ]; then
-    echo "Building SimpleInsta pour sideloading..."
+    echo "Building NoReelInsta pour sideloading..."
     
     make clean
     rm -rf .theos
@@ -40,20 +40,20 @@ if [ "$1" == "sideload" ]; then
     make SIDELOAD=1
     
     echo "Integration dans l IPA..."
-    rm -f packages/SimpleInsta-sideloaded.ipa
-    cyan -i "$IPA_FILE" -o packages/SimpleInsta-sideloaded.ipa -f .theos/obj/debug/SimpleInsta.dylib -c 9 -m 15.0 -du
+    rm -f packages/NoReelInsta-sideloaded.ipa
+    cyan -i "$IPA_FILE" -o packages/NoReelInsta-sideloaded.ipa -f .theos/obj/debug/NoReelInsta.dylib -c 9 -m 15.0 -du
     
     echo "Patch de l IPA..."
-    ipapatch --input packages/SimpleInsta-sideloaded.ipa --inplace --noconfirm
+    ipapatch --input packages/NoReelInsta-sideloaded.ipa --inplace --noconfirm
     
     echo ""
     echo "Termine !"
-    echo "L IPA modifiee est disponible ici: $(pwd)/packages/SimpleInsta-sideloaded.ipa"
+    echo "L IPA modifiee est disponible ici: $(pwd)/packages/NoReelInsta-sideloaded.ipa"
     echo "Installe-la avec AltStore ou Sideloadly."
     
 elif [ "$1" == "clean" ]; then
     make clean
-    rm -rf .theos packages/SimpleInsta-sideloaded.ipa
+    rm -rf .theos packages/NoReelInsta-sideloaded.ipa
     echo "Nettoyage termine."
     
 else
