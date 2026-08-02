@@ -1,0 +1,6 @@
+.theos/
+*.dylib
+*.ipa
+.DS_Store
+build/
+obj/
