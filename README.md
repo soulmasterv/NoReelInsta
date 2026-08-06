@@ -6,8 +6,7 @@
 
 **Ultra-minimal Instagram tweak for iOS** that only:
 1. ✅ **Removes the Reels tab** from the navigation bar
-2. ✅ **Disables automatic reel scrolling** (prevents doomscrolling)
-3. ✅ **Fixes tab highlighting** after Reels removal
+2. ✅ **Disables scrolling when clicking on a reel** (prevents doomscrolling)
 
 ---
 
